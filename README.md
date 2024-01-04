@@ -35,6 +35,7 @@ Other Style Guides
   1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
   1. [ECMAScript 6+ (ES 2015+) Styles](#ecmascript-6-es-2015-styles)
   1. [Standard Library](#standard-library)
+  1. [Error Handling](#error-handling)
 
 ## Types
 
@@ -3794,25 +3795,20 @@ Other Style Guides
 
 **[⬆ back to top](#table-of-contents)**
 
-## Testing
+## Error Handling
 
   <a name="testing--yup"></a><a name="28.1"></a>
   - [30.1](#testing--yup) **Yup.**
 
     ```javascript
-    function foo() {
-      return true;
-    }
+    // Always set custom error message and pass additional data
+    new errors.BadRequest('Invalid email', {data: 'sergey@google.com'});
     ```
 
   <a name="testing--for-real"></a><a name="28.2"></a>
   - [30.2](#testing--for-real) **No, but seriously**:
-    - Whichever testing framework you use, you should be writing tests!
-    - Strive to write many small pure functions, and minimize where mutations occur.
-    - Be cautious about stubs and mocks - they can make your tests more brittle.
-    - We primarily use [`mocha`](https://www.npmjs.com/package/mocha) and [`jest`](https://www.npmjs.com/package/jest) at Barangkulakan. [`tape`](https://www.npmjs.com/package/tape) is also used occasionally for small, separate modules.
-    - 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.
-    - Whenever you fix a bug, *write a regression test*. A bug fixed without a regression test is almost certainly going to break again in the future.
+    - Send response error always using http status e.g: 404, 500, etc.
+    - Error message must be define and meaningful.
 
 **[⬆ back to top](#table-of-contents)**
 
