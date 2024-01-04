@@ -1,4 +1,4 @@
-# JavaScript Style Guide() {
+# Barangkulakan Style Guide
 
 Other Style Guides
 
