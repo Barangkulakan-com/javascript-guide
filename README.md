@@ -3801,8 +3801,11 @@ Other Style Guides
   - [30.1](#testing--yup) **Yup.**
 
     ```javascript
-    // Always set custom error message and pass additional data
-    new errors.BadRequest('Invalid email', {data: 'sergey@google.com'});
+    // bad
+    const error = new errors.GeneralError(new Error('I exist'));
+
+    // good
+    const error = new errors.BadRequest('Invalid Parameters', {errors: {email: 'Email already taken'} });
     ```
 
   <a name="testing--for-real"></a><a name="28.2"></a>
