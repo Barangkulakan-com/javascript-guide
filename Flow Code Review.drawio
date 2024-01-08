@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2024-01-08T08:25:51.393Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.17" etag="NGKOvvePqRLSl2FfnS-r" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-08T08:35:05.749Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="ExCdr7XyUdeZsQ34MAW7" version="22.1.17" type="github">
   <diagram name="Page-1" id="LOWE6hxqLGXcx-t4Ryi6">
-    <mxGraphModel>
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="XfgG-h4NFHucKDyiNi73-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XfgG-h4NFHucKDyiNi73-6" target="XfgG-h4NFHucKDyiNi73-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-6" value="Understand the Requirements" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XfgG-h4NFHucKDyiNi73-10" target="XfgG-h4NFHucKDyiNi73-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-10" value="Examine the Code Logic" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="260" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XfgG-h4NFHucKDyiNi73-12" target="XfgG-h4NFHucKDyiNi73-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-12" value="Check for Coding Standards" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="460" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XfgG-h4NFHucKDyiNi73-14" target="XfgG-h4NFHucKDyiNi73-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-14" value="Consider Security Aspects" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="460" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XfgG-h4NFHucKDyiNi73-16" value="Engage&lt;br&gt;&amp;nbsp;in Discussion" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="260" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
