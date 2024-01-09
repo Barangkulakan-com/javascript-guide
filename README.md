@@ -36,6 +36,7 @@ Other Style Guides
   1. [ECMAScript 6+ (ES 2015+) Styles](#ecmascript-6-es-2015-styles)
   1. [Standard Library](#standard-library)
   1. [Error Handling](#error-handling)
+  1. [Database Migration](#database-migration)
 
 ## Types
 
@@ -3817,8 +3818,8 @@ Other Style Guides
 
 ## Database Migration
 
-  <a name="db--migration"></a><a name="28.1"></a>
-  - [30.1](#db--migration) **Migration File**
+  <a name="db--migration"></a><a name="29.1"></a>
+  - [31.1](#db--migration) **Migration File**
 
     ```javascript
     // bad, only migration defined.
@@ -3844,8 +3845,8 @@ Other Style Guides
     };
     ```
 
-  <a name="db--for-real"></a><a name="28.2"></a>
-  - [30.2](#db--for-real) **Migration rules**:
+  <a name="db--for-real"></a><a name="29.2"></a>
+  - [31.2](#db--for-real) **Migration rules**:
     - Always define up and down in migration file for rollback strategy and safety deployment.
     - Any new table in database must have audit trail feature, which is mean add column created_by, modified_by, and deleted_by.
 
