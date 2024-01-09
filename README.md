@@ -3814,3 +3814,39 @@ Other Style Guides
     - Error message must be define and meaningful.
 
 **[⬆ back to top](#table-of-contents)**
+
+## Database Migration
+
+  <a name="db--migration"></a><a name="28.1"></a>
+  - [30.1](#db--migration) **Migration File**
+
+    ```javascript
+    // bad, only migration defined.
+    module.exports = {
+      up: (queryInterface, Sequelize) => {
+        return queryInterface.addColumn('depo', 'name', {
+          type: Sequelize.STRING,
+        });
+      },
+    };
+
+    // good, always define up and down for strategy rollback.
+    module.exports = {
+      up: (queryInterface, Sequelize) => {
+        return queryInterface.addColumn('depo', 'name', {
+          type: Sequelize.STRING,
+        });
+      },
+
+      down: (queryInterface, Sequelize) => {
+        return queryInterface.removeColumn('depo', 'name');
+      }
+    };
+    ```
+
+  <a name="db--for-real"></a><a name="28.2"></a>
+  - [30.2](#db--for-real) **Migration rules**:
+    - Always define up and down in migration file for rollback strategy and safety deployment.
+    - Any new table in database must have audit trail feature, which is mean add column created_by, modified_by, and deleted_by.
+
+**[⬆ back to top](#table-of-contents)**
