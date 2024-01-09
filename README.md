@@ -3831,7 +3831,7 @@ Other Style Guides
       },
     };
 
-    // good, always define up and down for strategy rollback.
+    // good, always define up and down for rollback strategy.
     module.exports = {
       up: (queryInterface, Sequelize) => {
         return queryInterface.addColumn('depo', 'name', {
@@ -3847,7 +3847,7 @@ Other Style Guides
 
   <a name="db--for-real"></a><a name="29.2"></a>
   - [31.2](#db--for-real) **Migration rules**:
-    - Always define up and down in migration file for rollback strategy and safety deployment.
+    - Always define up and down in migration file for rollback strategy and deployment safety.
     - Any new table in database must have audit trail feature, which is mean add column created_by, modified_by, and deleted_by.
 
 **[⬆ back to top](#table-of-contents)**
