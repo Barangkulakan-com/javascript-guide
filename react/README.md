@@ -738,3 +738,11 @@ We don’t recommend using indexes for keys if the order of items may change.
   [anti-pattern]: https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html
 
 **[⬆ back to top](#table-of-contents)**
+
+## `Error Handling`
+
+  - When using try catch block in React function, make sure error message defined from the backend but if have special case it's ok hardcoded in frontend.
+
+  > Why? Because when error messages hardcoded into frontend, it's to risky and more difficult to manage.
+
+**[⬆ back to top](#table-of-contents)**
